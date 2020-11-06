@@ -1,4 +1,4 @@
-# Jenkins-template
+# Jenkins-master-template
 
 ## Start
 
