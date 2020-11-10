@@ -1,4 +1,5 @@
-FROM jenkins/jenkins:2.264
+ARG JENKINS_VERSION=2.261
+FROM jenkins/jenkins:${JENKINS_VERSION}
 
 USER jenkins
 

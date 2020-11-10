@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        # TODO: need to have a way of checking to what named version is latest pointing to ATM.
+        JENKINS_VERSION: 2.265
     container_name: jenkins-master-template
     ports:
       - "${HOST_HTTP_PORT}:8080/tcp"
