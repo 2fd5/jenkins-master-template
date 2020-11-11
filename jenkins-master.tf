@@ -25,7 +25,6 @@ resource jenkins_job simple_job {
   }
 }
 
-
 resource jenkins_job foos_job {
   count = 5
   name     = "${jenkins_folder.foo_folder.name}/BuildFoos-${count.index}"
